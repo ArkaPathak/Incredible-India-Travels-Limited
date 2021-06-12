@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <title>Travel Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>INCREDIBLE INDIA TRAVELS LIMITED</h1>
+        <br>
+        <h2>Travel Reservation Form</h2>
+    </header>
+    <h4>* denotes mandatory</h4>
+    <section>
+        <form id="myForm" name="myForm" onsubmit="return validateForm()" method="post">
+            <table>
+            <tr>
+               <td>Name *</td> 
+              <td> <input type="text" name="passengername" id="passengername" placeholder="Enter Your Name" required> </td>
+            </tr> 
+            <tr>
+            <td>Mobile Number *</td>
+            <td> <input type="tel" name="mobile" id="mobile" placeholder="Enter Your Mobile Number" pattern="[7-9]{1}[0-9]{9}" required> </td>
+            </tr>
+            <tr>
+            <td>Email ID *</td>
+            <td> <input type="email" name="mailid" id="mailid" placeholder="Enter Your Email ID" required> </td>
+            </tr>
+            <tr>
+            <td>Travel Month</td>
+            <td> <select name="travelmonth" required>
+                <option value="Select Month...">Select Travel Month...</option>
+                <option value="January-2021">January-2021</option>
+                <option value="February-2021">February-2021</option>
+                <option value="March-2021">March-2021</option>
+                <option value="April-2021">April-2021</option>
+                <option value="May-2021">May-2021</option>
+                <option value="June-2021">June-2021</option>
+                <option value="July-2021">July-2021</option>
+                <option value="August-2021">August-2021</option>
+                <option value="September-2021">September-2021</option>
+                <option value="October-2021">October-2021</option>
+                <option value="November-2021">November-2021</option>
+                <option value="December-2021">December-2021</option>
+            </select> </td>
+            </tr>
+            <tr>
+                <td>Origin *</td>
+                <td><input type="text" name="origin" id="origin" placeholder="Enter Your Home State" required></td>
+            </tr>
+            <tr>
+                <td>Destination *</td>
+                <td>
+                    <select name="destination" required>
+                        <option  value="Select Destination">Select Destination..</option>
+                        <option value="Kol">Kolkata</option>
+                        <option value="Maha">Maharashtra</option>
+                        <option value="Agra">Agra</option>
+                        <option value="Har">Haridwar</option>
+                        <option value="Raj">Rajasthan</option>
+                        <option value="Him">Himachal Pradesh</option>
+                        <option value="Sik">Sikkim</option>
+                        <option value="Pun">Punjab</option>
+                    </select>
+                </td>
+            </tr>
+            </table>
+            <br>
+            <button type="submit" id="submit" value="GET A CALL"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> GET A CALL</button>
+            <br><button type="reset" id="reset" value="RESET" onclick="return reset()"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> RESET</button>
+            <br>
+            <div id="result"> </div>
+        </form>
+    </section>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Our Visited Places</legend>
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="P1040151.JPG" width="370px" height="400px">
+                    <figcaption style="color: whitesmoke; font-size: large; font-weight: 600; text-align: center;">Vijay Stambha, Chittorgarh Rajasthan</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="P1040225.JPG" width="370px" height="400px">
+                    <figcaption style="color: whitesmoke; font-size: large; font-weight: 600; text-align: center;">View of the Yellow City, Jaisalmer</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="photo-1534407672671-e77ce1342dc8.jpg" width="370px" height="400px">
+                    <figcaption style="color: whitesmoke; font-size: large; font-weight: 600; text-align: center;">Hawa Mahal, Jaipur</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="IMG_20190214_081055.jpg" width="370px" height="400px">
+                    <figcaption style="color: whitesmoke; font-size: large; font-weight: 600; text-align: center;">Jhalong Bindu, North Bengal</figcaption>
+                </figure>
+            </div>
+        </div>
+    </fieldset>
+    <br>
+    <footer>
+        <!-- <p style="text-align: center; font-weight: bold; font-size: larger;"> </p> -->
+        <div>
+            <div>Foreign Tour</div>
+            <div>India Tour</div>
+            <div>World Tour</div>
+        </div>
+        <div>
+            <div>Gallery</div>
+            <div>Travel Brochures</div>
+            <div>Feedbacks</div>
+        </div>
+        <div>
+            <div>Facebook</div>
+            <div>Instagram</div>
+            <div>Twitter</div>
+        </div>
+    </footer>
+</body>
+</html>
